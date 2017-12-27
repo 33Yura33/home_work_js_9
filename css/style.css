@@ -1,0 +1,205 @@
+*{
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #f4f4f4;
+}
+
+button{
+	outline: none;
+}
+
+
+.search__input::-webkit-input-placeholder       {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.search__input::-moz-placeholder                {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.search__input:-moz-placeholder                 {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.search__input:-ms-input-placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
+.search__input:focus::-webkit-input-placeholder {text-indent: 500px; transition: text-indent 0.3s ease;}
+.search__input:focus::-moz-placeholder          {text-indent: 500px; transition: text-indent 0.3s ease;}
+.search__input:focus:-moz-placeholder           {text-indent: 500px; transition: text-indent 0.3s ease;}
+.search__input:focus:-ms-input-placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
+
+.page{
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 10px 15px;
+}
+
+.search{
+	flex-basis: 300px;
+	padding: 15px 10px;
+	background-color: #F0CB0E;
+	box-shadow: -5px 4px 6px 1px rgba(178,184,184,1);
+	margin-right: 30px;
+}
+
+.search__form{
+	margin-bottom: 10px;
+}
+
+.search__input{
+	padding: 10px 5px 10px 15px;
+	outline: none;
+	width: 100%;
+	background-color: #fff;
+	border: 2px solid #aaa;
+	margin-bottom: 5px;
+}
+
+.search__button{
+	cursor: pointer;
+	background: none;
+	border: none;
+	background-color: #EFEC38;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px 10px;
+	width: 100%;
+	transition: background-color .25s ease, margin-top .25s ease, margin-bottom .25s ease;
+}
+
+.search__button:hover{
+	background-color: #EFE225;
+	margin-top: -2px;
+	margin-bottom: 2px;
+}
+
+.search__extended{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: stretch;
+	width: 100%;
+}
+
+.search__button-extended{
+	cursor: pointer;
+	background: none;
+	border: none;
+	background-color: #EFEC38;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px 10px;
+	margin-left: 1%;
+	flex-basis: 49%;
+	margin-bottom: 2px;
+	transition: background-color .25s ease, margin-top .25s ease, margin-bottom .25s ease;
+}
+
+.search__button-extended:hover{
+	background-color: #EFE225;
+	margin-top: -2px;
+	margin-bottom: 4px;
+}
+
+.change-theme__header{
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.change-theme select{
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	padding: 5px 10px;
+	width: 100%;
+}
+
+
+.films_list{
+	flex-basis: 100%;
+	min-height: 95vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.film{
+	flex-basis: 300px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	position: relative;
+	overflow: hidden;
+	align-items: stretch;
+	background-color: #fafafa;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.film__raiting{
+	position: absolute;
+    background-color: #c33838;
+    width: 50px;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-16%) translateY(-21%);
+}
+
+.film__info{
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.film__name{
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.film__description{
+	text-indent: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.film__date{
+	font-size: 16px;
+}
+
+.film__date span{
+	font-size: 18px;
+	margin-left: 5px;
+	color: #353131;
+	font-weight: bold;
+	
+}
+
+
+
+.films__list-placeholder{
+	font-size: 40px;
+	color: #aaa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	width: 100%;
+}
+
+.not-found{
+	font-size: 40px;
+	color: #D50820;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	width: 100%;
+}

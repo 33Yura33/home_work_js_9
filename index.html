@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Фильмы</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="" id="theme_styles">
+</head>
+<body>
+
+	<div class="page">
+		<div class="search">
+			<form class="search__form" id="search-films">
+				<input type="text" class="search__input" id="film-q" placeholder="Введите название фильма...">
+				<button class="search__button" type="submit">Поиск</button>
+			</form>
+			<div class="search__extended">
+				<button class="search__button-extended" id="search-popular">Popular</button>
+				<button class="search__button-extended" id="search-top-rated">Top Rated</button>
+				<button class="search__button-extended" id="search-upcoming">Upcoming</button>
+			</div>
+			<div class="change-theme">
+				<h1 class="change-theme__header">Выбор темы: </h1>
+				<select id="theme_settings">
+					<option id="theme_light" value="light">Светлая</option>
+					<option id="theme_dark" value="dark">Тёмная</option>
+				</select>
+			</div>
+		</div>
+		<div class="films_list">
+			<div class="films__list-placeholder">
+				Тут появятся фильмы после поиска :)
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/jquery.tmpl.js"></script>
+	<script src="js/common.js"></script>
+
+
+	<script id="film_element" type="text/html">
+		<div class="film">
+			<div class="film__raiting">${film_raiting}</div>
+			<div class="film__poster">
+				<img src="https://image.tmdb.org/t/p/w300${film_poster}">
+			</div>
+			<div class="film__info">
+				<div class="film__name">${film_name}</div>
+				<div class="film__description">${film_description}</div>
+				<div class="film__date">Release date: <span>${film_date}</span></div>
+			</div>
+		</div>
+	</script>
+	<script id="films_not_found" type="text/html">
+		<div class="not-found">
+			По вашему запросу: "${search_query}" не было найдено ни одного фильма
+		</div>
+	</script>
+</body>
+</html>

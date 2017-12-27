@@ -1,0 +1,50 @@
+
+.search{
+	background-color: #F0CB0E;
+	box-shadow: -5px 4px 6px 1px rgba(178,184,184,1);
+}
+
+.search__input{
+	background-color: #fff;
+	border: 2px solid #aaa;
+}
+
+.search__button{
+	background-color: #EFEC38;
+}
+
+.search__button:hover{
+	background-color: #EFE225;
+}
+
+.search__button-extended{
+	background-color: #EFEC38;
+}
+
+.search__button-extended:hover{
+	background-color: #EFE225;
+}
+
+.film{
+	background-color: #fafafa;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.film__raiting{
+    background-color: #c33838;
+    color: #fff;
+}
+
+.film__date span{
+	color: #353131;
+}
+
+
+
+.films__list-placeholder{
+	color: #aaa;
+}
+
+.not-found{
+	color: #D50820;
+}
